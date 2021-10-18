@@ -1,14 +1,14 @@
 class ErrorLogger {
     constructor(params = {
-        /** @param {string} source — nome do arquivo fonte / arquivo em que estamos rastreando os erros */
+        /** @param {String} source — nome do arquivo fonte / arquivo em que estamos rastreando os erros */
         source: null,
-        /** @param {number} interval — intervalo do buffer em segundos */
+        /** @param {Number} interval — intervalo do buffer em segundos */
         interval: 10000,
-        /** @param {boolean} log_uncaught — ativar ou desativar o log de erros não tratados */
+        /** @param {Boolean} log_uncaught — ativar ou desativar o log de erros não tratados */
         log_uncaught: true,
-        /** @param {string} app_version — versão da aplicação */
+        /** @param {String} app_version — versão da aplicação */
         app_version: null,
-        /** @param {text} api_url — URL da API POST que irá receber os logs */
+        /** @param {String} api_url — URL da API POST que irá receber os logs */
         api_url: null,
     }) {
         this.source = params.source;
