@@ -15,7 +15,7 @@ form.addEventListener("submit", (e) => {
         e.preventDefault();
         let nome = document.getElementById('nome').value;
         let sobrenome = document.getElementById('sobrenome').value;
-        let mensagem = "O seu nome é " + primeiro_nome + " " + sobrenome;
+        let mensagem = "O seu nome é " + primeiro_nome + " " + sobrenome; //purposely causing an error to test the error logger
         alert(mensagem);
     } catch (err) {
         logger.logError(err);
